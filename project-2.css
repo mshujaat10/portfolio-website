@@ -1,0 +1,223 @@
+#carousal{
+    /* margin-left: 3rem; */
+    width: 30rem;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
+#nav{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.nav-link:hover{
+    font-weight: bold;
+    cursor: pointer;
+    /* text-decoration: underline; */
+    color: rgb(109, 11, 201);
+}
+.navbar ul a:hover{
+    font-weight: 500;
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+.material-symbols-outlined:hover{
+    cursor: pointer;
+    color: rgb(109, 11, 201);
+    font-size: 25px;
+}
+
+/* Section-1 */
+
+#sec-1{
+    height: 25rem;
+    /* width: 100%; */
+}
+#section-1{
+    height: 25rem;
+    /* width: 100%; */
+}
+@media only screen and (max-width:992px) {
+    #section-1{
+        flex-direction: column;
+    }
+    #text{
+        width: 100% !important;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    #carousal{
+        width: 100% !important;
+    }
+}
+#text{
+    width: 45%;
+}
+
+/* Section-2 */
+
+#sec-2{
+    height: 40rem;
+}
+@media only screen and (min-width:700px) {
+    .card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media only screen and (max-width:700px) {
+    #section-2{
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    #sec-2{
+        height: fit-content;
+    }
+    .card{
+        margin-bottom: 15px;
+    }
+}
+
+/* Section-3 */
+
+#sec-3{
+    /* border: 2px solid; */
+    height: 32rem;
+}
+.para{
+    background-color: #f1f1f1;
+    width: 35rem;
+}
+.para-2{
+    background-color: #f1f1f1;
+    width: 35rem;
+}
+#span-3{
+    color: #999696;
+}
+#span-4{
+    color: #999696;
+}
+@media only screen and (max-width:1145px) {
+    #sec-3 h1{
+        margin-right: 30px;
+        text-align: center;
+        font-size: 3rem;
+    }
+    #sec-1{
+        width: 100%;
+    }
+    #sec-3{
+        height: fit-content;
+    }
+    #section-3{
+        flex-direction: column !important;
+        width: 100%;
+        padding: 0px 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .para{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .para-2{
+        width: 100%;
+    }
+}
+
+
+/* Footer */
+
+footer img{
+    width: 45px;
+    height: 43px;
+}
+@media only screen and (max-width:1260px) {
+    #div-2{
+        padding-right: 15rem !important;
+        padding-left: 5rem;
+    }
+    #div-3 p{
+        width: 20rem !important;
+    }
+    
+}
+@media only screen and (max-width:1140px) {
+    #footer{
+        padding-left: 5rem !important;
+    }
+}
+@media only screen and (max-width:1000px) {
+    footer{
+        background-color: #252591;
+        color: white;
+    }
+    #facebook{
+        color: white !important;
+    }
+    #instagram{
+        color: white !important;
+    }
+    #github{
+        color: white !important;
+    }
+}
+@media only screen and (max-width:900px) {
+    #footer{
+        padding-left: 10rem !important;
+    }
+}
+@media only screen and (max-width:730px) {
+    footer{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px!important;
+    }
+    #footer{
+        flex-direction: column;
+        width: 100%!important;
+        padding: 0%!important;
+    }
+    #div-1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%!important;
+    }
+    #div-2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%!important;
+        padding: 0%!important;
+    }
+    #div-2 p{
+        margin: 0%!important;
+    }
+    #div-3{
+        margin-top: 5px!important;
+        padding: 0%!important;
+        border: none!important;
+    }
+    #div-3 p{
+        margin-left: 30px!important;
+    }
+    #div-4{
+        align-items: center!important;
+        justify-content: center;
+        padding: 0%!important;
+        width: 100%!important;
+    }
+    #div-4 li{
+        display: flex;
+        justify-content: center;
+        width: 100%!important;
+        align-items: center;
+    }
+}
+
+

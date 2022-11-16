@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="project-2.css">
+    <link rel="stylesheet" href="project-2media.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login Or Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="staticEmail" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputNumber" class="col-sm-2 col-form-label">CNIC:</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="staticEmail" placeholder="NIC">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password:</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Login</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="sticky-top bg-white">
+        <nav class="navbar navbar-expand-lg pb-0 pt-0">
+            <div class="container-fluid mt-3 mb-3 pt-1 pb-1">
+                <a class="navbar-brand ms-4 fs-4 fw-bold text-primary" href="#">CodingWebsite</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pe-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">HTML</a></li>
+                                <li><a class="dropdown-item" href="#">CSS</a></li>
+                                <li><a class="dropdown-item" href="#sec-2">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="#sec-2">PHP</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Video Tutorials</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Notes</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-items active">
+                            <a class="nav-link" href="#sec-3">Testimonials</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Work With Us</a>
+                        </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mx-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <hr class="m-0">
+        <nav id="nav" class="d-flex justify-content-between align-items-center px-5">
+            <div>
+            <span class="material-symbols-outlined">
+                <style>
+                    .material-symbols-outlined {
+                        color: blue;
+                      font-variation-settings:
+                      'FILL' 1,
+                      'wght' 400,
+                      'GRAD' 0,
+                      'opsz' 48
+                    }
+                    </style>
+                home
+                </span>
+            </div>
+            <ul class="nav justify-content-center fw-semibold mt-1 mb-1">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">JS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">JAVA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">C</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">C++</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">PYTHON</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">PHP</a>
+                </li>
+            </ul>
+            <div>
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+                </div>
+        </nav>
+    </header>
+    <section id="sec-1" class="container-fluid px-5 mt-5">
+        <div id="section-1" class=" w-100 d-flex justify-content-between">
+            <div id="text">
+                <h1>Welcome To <a style="color: blue;">CodingWebsite</a></h1>
+                <p>Confused on which course to take? I have got you covered. Browse courses and find out the best course
+                    for
+                    you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to people
+                    in
+                    short time which took me ages to learn.</p>
+                <button type="button" class="btn btn-dark">Free Courses</button>
+                <button type="button" class="btn btn-light">Explore Blog</button>
+            </div>
+            <div id="carousal" class="w-50">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/project-2img.png" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/project-2 img2.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/project-2 img3.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-2">
+        <h1 class="text-center p-5">Recommended Courses</h1>
+        <div id="section-2" class="d-flex justify-content-evenly">
+            <div class="card" style="width: 23rem; height: 30rem;">
+                <img src="/project-2 card.img.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">JavaScript Course</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Start JavaScript</a>
+                </div>
+            </div>
+            <div class="card" style="width: 23rem; height: 30rem;">
+                <img src="/project-2 card.img2.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">PHP Course</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Start PHP</a>
+                </div>
+            </div>
+            <div class="card" style="width: 23rem; height: 30rem;">
+                <img src="/project-2 card.img3.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">PYTHON Course</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Start PYTHON</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-3">
+        <h1 class="text-center p-5">Testimonials</h1>
+        <div id="section-3" class="d-flex justify-content-evenly">
+            <div class="para p-5">
+                <span id="span-3" class="fa fa-quote-right fa-pull-left fs-4 d-inline-block w-100 pb-1"></span>
+                <p>I don't have words to thank this man, I'm really grateful to have this channel and website in my
+                    daily
+                    routine. If you're a mere beginner, then you can trust this guy and can put your time into his
+                    content.
+                    I can assure you that it'll be worth it.</p>
+                <span> <strong> Mohit Kumar </strong><br>
+                    <small>Web Developer</small></span>
+            </div>
+            <div class="para-2 p-5">
+                <span id="span-4" class="fa fa-quote-right fa-pull-left fs-4 d-inline-block w-100 pb-1"></span>
+                <p>For everyone who wants to level up their #Coding and #Dev skills - seriously, this channel is
+                    for
+                    you!
+                    Both basic and advanced stacks are covered on this channel, and one can learn according to
+                    his skill
+                    levels. And the icing on the cake is, everything is available for free.</p>
+                <span> <strong> Rakesh Shetty </strong><br>
+                    <small>Web Developer</small></span>
+            </div>
+        </div>
+    </section>
+    <footer class="pt-2 w-100">
+        <div id="footer" class="d-flex ps-1 pe-5">
+            <div id="div-1" class="d-flex justify-content-evenly w-50">
+                <div id="div-2" class="d-flex w-25 me-2 pe-3">
+                    <img src="/project-2 card.img.png" class="rounded-circle me-2 mt-1" alt="">
+                    <p class="fw-semi-bold fs-4 mt-1">CodingWebsite</p>
+                </div>
+                <div id="div-3" class="p-2 border-start">
+                    <p class="fw-light mt-1">Copyright © 2022 CodingWebsite.com</p>
+                </div>
+            </div>
+            <div id="div-4" class="d-flex justify-content-end w-50 p-2 pe-4">
+                <li class="list-unstyled mt-1">
+                    <a style="color:  rgb(54, 53, 53);" class="text-decoration-none fa fa-facebook fs-5 m-1"
+                        href="https://www.facebook.com/muhammad.shujaat.5243/" target="_blank" id="facebook"></a>
+                    <a style="color: rgb(54, 53, 53);" class="text-decoration-none fa fa-instagram fs-5 m-1"
+                        href="https://www.instagram.com/muhammadshujaat56" target="_blank" id="instagram"></a>
+                    <a style="color: rgb(54, 53, 53);" class="text-decoration-none fa fa-github fs-5 m-1"
+                        href="https://github.com/mshujaat10" target="_blank" id="github"></a>
+                </li>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
